@@ -61,7 +61,7 @@ export default function Home() {
       <section id="projects" className="py-12 w-full px-4">
         <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
         <p className="text-center mb-6 text-base">
-          Here's a project I've worked on recently.
+          Here&rsquo;s a project I have worked on recently.
         </p>
 
         <div className="flex justify-center">
@@ -93,7 +93,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-4">Get to Know Me</h2>
         <div className="max-w-3xl mx-auto text-white dark:text-gray-900 text-lg leading-7">
           <p className="mb-4">
-            Hello! I'm Shreya, a full-stack developer with a passion for building scalable and interactive web experiences. 
+            Hello! I&rsquo;m Shreya, a full-stack developer with a passion for building scalable and interactive web experiences. 
             I love blending creativity with technology to craft user-friendly interfaces and robust back-end systems.
           </p>
           <p className="mb-4">
@@ -102,7 +102,7 @@ export default function Home() {
           </p>
           <p>
             Feel free to reach out at <a href="mailto:shreyab3012@gmail.com" className="underline text-blue-400">shreyab3012@gmail.com</a> 
-            if you’d like to connect or work together on something exciting!
+            if you&rsquo;d like to connect or work together on something exciting!
           </p>
         </div>
       </section>
