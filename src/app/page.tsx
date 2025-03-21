@@ -33,20 +33,22 @@ export default function Home() {
       </header>
 
       {/* Intro Text */}
-      <div className="text-center px-4 mt-4">
-        <h1 className="text-xl sm:text-2xl font-medium">
-          Hi, welcome to my portfolio — showcasing my work, skills, and passion for building impactful digital experiences.
+      <div className="text-center max-w-xl px-6 mt-8">
+        <h1 className="text-2xl sm:text-3xl font-semibold leading-snug">
+          Hi, welcome to my <span className="text-purple-400 dark:text-purple-600">portfolio</span> —
+          showcasing my <span className="text-pink-400 dark:text-pink-600">work, skills,</span> and 
+          passion for <span className="text-blue-400 dark:text-blue-600">building impactful digital experiences.</span>
         </h1>
       </div>
 
-      <section className="flex flex-col items-center pt-16 pb-8">
+      <section className="flex flex-col items-center pt-12 pb-8">
         <img 
           src="https://camo.githubusercontent.com/a69ef1e4a173201181c22ac940c8b17935229d4d45ac5276631cbf4ba3d21db4/68747470733a2f2f6d69722d73332d63646e2d63662e626568616e63652e6e65742f70726f6a6563745f6d6f64756c65732f646973702f3630313031343131363737303437352e363036386265666634363430612e676966" 
           alt="Hero GIF" 
           className="w-full max-w-3xl h-auto mb-6 px-4"
         />
 
-        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
           <a href="#projects">
             <button className="w-full sm:w-auto px-6 py-3 bg-purple-500 text-white dark:text-gray-900 text-base rounded-lg font-semibold hover:bg-purple-700 transition">
               View My Work
