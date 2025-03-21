@@ -6,7 +6,6 @@ import { Sun, Moon } from 'lucide-react';
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
 
-  // On component mount, set theme based on localStorage
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const isDark = savedTheme === 'dark';
@@ -14,7 +13,6 @@ export default function Home() {
     document.documentElement.classList.toggle('dark', isDark);
   }, []);
 
-  // Toggle between dark and light themes
   const toggleDarkMode = () => {
     const newTheme = !darkMode ? 'dark' : 'light';
     setDarkMode(!darkMode);
@@ -24,8 +22,7 @@ export default function Home() {
 
   return (
     <div className={`flex flex-col items-center min-h-screen bg-gray-900 dark:bg-white text-white dark:text-gray-900 scroll-smooth`}>
-      
-      {/* Theme Toggle Button */}
+
       <header className="p-4 w-full flex justify-end">
         <button 
           onClick={toggleDarkMode} 
@@ -35,14 +32,20 @@ export default function Home() {
         </button>
       </header>
 
-      {/* Header Section with GIF and Buttons */}
+      {/* Intro Text */}
+      <div className="text-center px-4 mt-4">
+        <h1 className="text-xl sm:text-2xl font-medium">
+          Hi, welcome to my portfolio — showcasing my work, skills, and passion for building impactful digital experiences.
+        </h1>
+      </div>
+
       <section className="flex flex-col items-center pt-16 pb-8">
         <img 
           src="https://camo.githubusercontent.com/a69ef1e4a173201181c22ac940c8b17935229d4d45ac5276631cbf4ba3d21db4/68747470733a2f2f6d69722d73332d63646e2d63662e626568616e63652e6e65742f70726f6a6563745f6d6f64756c65732f646973702f3630313031343131363737303437352e363036386265666634363430612e676966" 
           alt="Hero GIF" 
           className="w-full max-w-3xl h-auto mb-6 px-4"
         />
-        
+
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
           <a href="#projects">
             <button className="w-full sm:w-auto px-6 py-3 bg-purple-500 text-white dark:text-gray-900 text-base rounded-lg font-semibold hover:bg-purple-700 transition">
@@ -57,7 +60,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* My Work Section */}
       <section id="projects" className="py-12 w-full px-4">
         <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
         <p className="text-center mb-6 text-base">
@@ -71,7 +73,7 @@ export default function Home() {
               alt="AffirmPlanner Project" 
               className="w-full h-52 object-cover rounded-md mb-4"
             />
-            
+
             <h3 className="text-xl font-semibold mb-4">AffirmPlanner</h3>
             <p className="text-base text-gray-300 dark:text-gray-700 mb-4">
               A platform to help users plan and organize their tasks effectively. 
@@ -88,7 +90,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Get to Know Me Section */}
       <section id="about" className="py-12 w-full px-4">
         <h2 className="text-3xl font-bold text-center mb-4">Get to Know Me</h2>
         <div className="max-w-3xl mx-auto text-white dark:text-gray-900 text-lg leading-7">
@@ -106,7 +107,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      
+
     </div>
   );
 }
