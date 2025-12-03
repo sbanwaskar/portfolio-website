@@ -63,10 +63,12 @@ export default function Home() {
       </section>
 
       <section id="projects" className="py-12 w-full px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
-        <p className="text-center mb-6 text-base">
-          Here&rsquo;s a project I have worked on recently.
-        </p>
+      <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
+      <p className="text-center mb-6 text-base text-neutral-400">
+        A featured project showcasing my skills in building intuitive, user-centered applications.
+      </p>
+
+
 
         <div className="flex justify-center">
           <div className="bg-gray-800 dark:bg-gray-100 rounded-lg p-6 w-full max-w-md shadow-lg">
@@ -78,12 +80,13 @@ export default function Home() {
 
             <h3 className="text-xl font-semibold mb-4">AffirmPlanner</h3>
             <p className="text-base text-gray-300 dark:text-gray-700 mb-4">
-              A platform to help users plan and organize their tasks effectively. 
-              It features an interactive mood board and provides daily affirmations 
-              based on the mood you log in, creating a personalized experience.
+            AffirmPlanner is a wellness-focused planner that helps users stay organized
+            while taking care of their emotional well-being. It includes a mood tracker,
+            personalized affirmations, mood-based tips, event scheduling with tags,
+            and a visual Mood Wheel to reflect emotional patterns over time.
             </p>
 
-            <a href="https://affirmplanner.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://affirmplanner.com/" target="_blank" rel="noopener noreferrer">
               <button className="w-full py-2 bg-blue-500 text-white dark:text-gray-900 text-base rounded-lg font-semibold hover:bg-blue-700 transition">
                 Live Demo
               </button>
@@ -95,18 +98,27 @@ export default function Home() {
       <section id="about" className="py-12 w-full px-4">
         <h2 className="text-3xl font-bold text-center mb-4">Get to Know Me</h2>
         <div className="max-w-3xl mx-auto text-white dark:text-gray-900 text-lg leading-7">
-          <p className="mb-4">
-            Hello! I&rsquo;m Shreya, a full-stack developer with a passion for building scalable and interactive web experiences. 
-            I love blending creativity with technology to craft user-friendly interfaces and robust back-end systems.
-          </p>
-          <p className="mb-4">
-            I specialize in both front-end and back-end development, with expertise in JavaScript, React, Node.js, MongoDB, and SQL. 
-            I enjoy collaborating with others, learning new technologies, and continuously refining my craft to deliver impactful web solutions that make a difference.
-          </p>
-          <p>
-            Feel free to reach out at <a href="mailto:shreyab3012@gmail.com" className="underline text-blue-400">shreyab3012@gmail.com</a> 
-            if you&rsquo;d like to connect or work together on something exciting!
-          </p>
+        <p className="mb-4">
+          Hello! I&rsquo;m Shreya, a full-stack developer who brings together design thinking
+          and engineering to build scalable, user-friendly web experiences. I enjoy
+          creating clean, intuitive interfaces and pairing them with robust back-end logic.
+        </p>
+        <p className="mb-4">
+          My toolkit includes JavaScript, React, Node.js, MongoDB, and SQL, and I&rsquo;m
+          actively strengthening my cloud skills through AWS projects. I thrive in
+          collaborative environments, love learning new technologies, and aim to create
+          solutions that are purposeful and impactful.
+        </p>
+        <p>
+          Feel free to reach out at{" "}
+          <a
+            href="mailto:shreyab3012@gmail.com"
+            className="underline text-blue-400"
+          >
+            shreyab3012@gmail.com
+          </a>{" "}
+          if you&rsquo;d like to connect or work together on something exciting!
+        </p>
         </div>
       </section>
 
