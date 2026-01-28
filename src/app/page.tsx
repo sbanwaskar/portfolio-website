@@ -21,11 +21,12 @@ export default function Home() {
   };
 
   return (
-    <div className={`flex flex-col items-center min-h-screen bg-gray-900 dark:bg-white text-white dark:text-gray-900 scroll-smooth`}>
-
+    <div
+      className={`flex flex-col items-center min-h-screen bg-gray-900 dark:bg-white text-white dark:text-gray-900 scroll-smooth`}
+    >
       <header className="p-4 w-full flex justify-end">
-        <button 
-          onClick={toggleDarkMode} 
+        <button
+          onClick={toggleDarkMode}
           className="p-2 rounded-full bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900"
         >
           {darkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -35,18 +36,19 @@ export default function Home() {
       {/* Intro Text */}
       <div className="text-center max-w-xl px-6 mt-8">
         <h1 className="text-2xl sm:text-3xl font-semibold leading-snug">
-          Hi, welcome to my <span className="text-purple-400 dark:text-purple-600">portfolio</span> —
-          showcasing my <span className="text-pink-400 dark:text-pink-600">work, skills,</span> and 
-          passion for <span className="text-blue-400 dark:text-blue-600">building impactful digital experiences.</span>
+          Hi, welcome to my{' '}
+          <span className="text-purple-400 dark:text-purple-600">portfolio</span> —
+          showcasing my{' '}
+          <span className="text-pink-400 dark:text-pink-600">work, skills,</span> and
+          passion for{' '}
+          <span className="text-blue-400 dark:text-blue-600">
+            building impactful digital experiences.
+          </span>
         </h1>
       </div>
 
       <section className="flex flex-col items-center pt-12 pb-8">
-        <img 
-          src="https://camo.githubusercontent.com/a69ef1e4a173201181c22ac940c8b17935229d4d45ac5276631cbf4ba3d21db4/68747470733a2f2f6d69722d73332d63646e2d63662e626568616e63652e6e65742f70726f6a6563745f6d6f64756c65732f646973702f3630313031343131363737303437352e363036386265666634363430612e676966" 
-          alt="Hero GIF" 
-          className="w-full max-w-3xl h-auto mb-6 px-4"
-        />
+        {/* GIF REMOVED HERE */}
 
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
           <a href="#projects">
@@ -63,30 +65,34 @@ export default function Home() {
       </section>
 
       <section id="projects" className="py-12 w-full px-4">
-      <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
-      <p className="text-center mb-6 text-base text-neutral-400">
-        A featured project showcasing my skills in building intuitive, user-centered applications.
-      </p>
-
-
+        <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
+        <p className="text-center mb-6 text-base text-neutral-400">
+          A featured project showcasing my skills in building intuitive,
+          user-centered applications.
+        </p>
 
         <div className="flex justify-center">
           <div className="bg-gray-800 dark:bg-gray-100 rounded-lg p-6 w-full max-w-md shadow-lg">
-            <img 
-              src="/affirmplanner.png" 
-              alt="AffirmPlanner Project" 
+            <img
+              src="/affirmplanner.png"
+              alt="AffirmPlanner Project"
               className="w-full h-52 object-cover rounded-md mb-4"
             />
 
             <h3 className="text-xl font-semibold mb-4">AffirmPlanner</h3>
             <p className="text-base text-gray-300 dark:text-gray-700 mb-4">
-            AffirmPlanner is a wellness-focused planner that helps users stay organized
-            while taking care of their emotional well-being. It includes a mood tracker,
-            personalized affirmations, mood-based tips, event scheduling with tags,
-            and a visual Mood Wheel to reflect emotional patterns over time.
+              AffirmPlanner is a wellness-focused planner that helps users stay
+              organized while taking care of their emotional well-being. It
+              includes a mood tracker, personalized affirmations, mood-based
+              tips, event scheduling with tags, and a visual Mood Wheel to
+              reflect emotional patterns over time.
             </p>
 
-            <a href="https://affirmplanner.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://affirmplanner.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="w-full py-2 bg-blue-500 text-white dark:text-gray-900 text-base rounded-lg font-semibold hover:bg-blue-700 transition">
                 Live Demo
               </button>
@@ -98,30 +104,32 @@ export default function Home() {
       <section id="about" className="py-12 w-full px-4">
         <h2 className="text-3xl font-bold text-center mb-4">Get to Know Me</h2>
         <div className="max-w-3xl mx-auto text-white dark:text-gray-900 text-lg leading-7">
-        <p className="mb-4">
-          Hello! I&rsquo;m Shreya, a full-stack developer who brings together design thinking
-          and engineering to build scalable, user-friendly web experiences. I enjoy
-          creating clean, intuitive interfaces and pairing them with robust back-end logic.
-        </p>
-        <p className="mb-4">
-          My toolkit includes JavaScript, React, Node.js, MongoDB, and SQL, and I&rsquo;m
-          actively strengthening my cloud skills through AWS projects. I thrive in
-          collaborative environments, love learning new technologies, and aim to create
-          solutions that are purposeful and impactful.
-        </p>
-        <p>
-          Feel free to reach out at{" "}
-          <a
-            href="mailto:shreyab3012@gmail.com"
-            className="underline text-blue-400"
-          >
-            shreyab3012@gmail.com
-          </a>{" "}
-          if you&rsquo;d like to connect or work together on something exciting!
-        </p>
+          <p className="mb-4">
+            Hello! I&rsquo;m Shreya, a full-stack developer who brings together
+            design thinking and engineering to build scalable, user-friendly web
+            experiences. I enjoy creating clean, intuitive interfaces and
+            pairing them with robust back-end logic.
+          </p>
+          <p className="mb-4">
+            My toolkit includes JavaScript, React, Node.js, MongoDB, and SQL,
+            and I&rsquo;m actively strengthening my cloud skills through AWS
+            projects. I thrive in collaborative environments, love learning new
+            technologies, and aim to create solutions that are purposeful and
+            impactful.
+          </p>
+          <p>
+            Feel free to reach out at{' '}
+            <a
+              href="mailto:shreyab3012@gmail.com"
+              className="underline text-blue-400"
+            >
+              shreyab3012@gmail.com
+            </a>{' '}
+            if you&rsquo;d like to connect or work together on something
+            exciting!
+          </p>
         </div>
       </section>
-
     </div>
   );
 }
