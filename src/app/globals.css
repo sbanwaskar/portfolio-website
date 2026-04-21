@@ -1,0 +1,12 @@
+/* src/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 18px; /* Set a balanced base font size */
+}
+
+body {
+    zoom: 1.1; /* Slightly increase the scale for a comfortable look */
+}
