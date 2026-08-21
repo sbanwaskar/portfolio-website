@@ -72,57 +72,109 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <section id="projects" className="py-16 w-full px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
-        <p className="text-center mb-8 text-gray-500">
-          A featured project showcasing my skills in building intuitive applications.
-        </p>
+      {/* Projects */}
+<section id="projects" className="py-16 w-full px-4">
+  <h2 className="text-3xl font-bold text-center mb-4">My Work</h2>
 
-        <div className="flex justify-center">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 w-full max-w-md shadow-xl border border-gray-200 dark:border-gray-700">
+  <p className="text-center mb-8 text-gray-500">
+    Full-stack projects showcasing my experience building intuitive, production-ready applications.
+  </p>
 
-            <img
-              src="/affirmplanner.png"
-              alt="AffirmPlanner"
-              className="w-full h-44 object-cover rounded-md mb-6"
-            />
+  <div className="flex flex-wrap justify-center gap-8">
 
-            <div className="text-center">
-              <span className="inline-block mb-3 text-sm px-3 py-1 bg-purple-500/20 text-purple-400 rounded-lg">
-                Featured Project
-              </span>
+    {/* AffirmPlanner */}
+    <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 w-full max-w-md shadow-xl border border-gray-200 dark:border-gray-700">
 
-              <h3 className="text-2xl font-bold mb-3">
-                AffirmPlanner
-              </h3>
-            </div>
+      <img
+        src="/affirmplanner.png"
+        alt="AffirmPlanner"
+        className="w-full h-44 object-cover rounded-md mb-6"
+      />
 
-            <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm">
-              Full-stack wellness planner with mood tracking, affirmations, and event scheduling.
-            </p>
+      <div className="text-center">
+        <span className="inline-block mb-3 text-sm px-3 py-1 bg-purple-500/20 text-purple-400 rounded-lg">
+          Featured Project
+        </span>
 
-            <ul className="text-sm text-gray-600 dark:text-gray-400 mb-4 space-y-1">
-              <li>• Mood tracking</li>
-              <li>• Event scheduling</li>
-              <li>• Mood insights</li>
-            </ul>
+        <h3 className="text-2xl font-bold mb-3">
+          AffirmPlanner
+        </h3>
+      </div>
 
-            <p className="text-xs text-gray-500 mb-4">
-              React • Node • MongoDB • AWS
-            </p>
+      <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm">
+        Full-stack wellness planner with mood tracking, affirmations, and event scheduling.
+      </p>
 
-            <a
-              href="https://affirmplanner.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="w-full py-2.5 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition">
-                Live Demo
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
+      <ul className="text-sm text-gray-600 dark:text-gray-400 mb-4 space-y-1">
+        <li>• Mood tracking</li>
+        <li>• Event scheduling</li>
+        <li>• Mood insights</li>
+      </ul>
+
+      <p className="text-xs text-gray-500 mb-4">
+        React • Node • MongoDB • AWS
+      </p>
+
+      <a
+        href="https://affirmplanner.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="w-full py-2.5 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition">
+          Live Demo
+        </button>
+      </a>
+    </div>
+
+
+    {/* CampusConnect */}
+    <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 w-full max-w-md shadow-xl border border-gray-200 dark:border-gray-700">
+
+      <img
+        src="/campusconnect.png"
+        alt="CampusConnect"
+        className="w-full h-44 object-cover rounded-md mb-6"
+      />
+
+      <div className="text-center">
+        <span className="inline-block mb-3 text-sm px-3 py-1 bg-purple-500/20 text-purple-400 rounded-lg">
+          Full-Stack Project
+        </span>
+
+        <h3 className="text-2xl font-bold mb-3">
+          CampusConnect
+        </h3>
+      </div>
+
+      <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm">
+        Full-stack campus event platform that helps students discover opportunities
+        while providing organizers with secure tools to manage events.
+      </p>
+
+      <ul className="text-sm text-gray-600 dark:text-gray-400 mb-4 space-y-1">
+        <li>• Event search and category filtering</li>
+        <li>• Secure organizer authentication</li>
+        <li>• Event management and recruiter demo mode</li>
+      </ul>
+
+      <p className="text-xs text-gray-500 mb-4">
+        React • Node.js • Express • MongoDB • JWT • Render
+      </p>
+
+      <a
+        href="https://campus-connect-1-zon9.onrender.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="w-full py-2.5 rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium shadow-md hover:shadow-lg hover:scale-[1.02] transition">
+          Live Demo
+        </button>
+      </a>
+
+    </div>
+
+  </div>
+</section>
 
       {/* About */}
       <section id="about" className="py-16 w-full px-4">
